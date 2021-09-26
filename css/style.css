@@ -63,8 +63,8 @@ li {
   }
   .main::after{
     content: "";
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 45%;
     right: -75px;
     width: 440px;
     height: 620px;
