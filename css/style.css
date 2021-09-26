@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url(../font/Rubik-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  direction: ltr;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul,
+li {
+  list-style: none;
+}
+.app {
+    width: 1200px;
+  }
+  @media (max-width: 1199.98px) {
+    .app {
+      width: 992px;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .app {
+      width: 768px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .app {
+      width: 576px;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .app {
+      width: calc(100% - 30px);
+      margin: 0 15px;
+    }
+  }
+  main{
+
+      width: 100%;
+      height: 100%;
+  }
+  .main::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75px;
+      width: 440px;
+      height: 620px;
+      border-bottom-left-radius: 220px;
+      border-bottom-right-radius: 250px;
+      background: linear-gradient(210deg,hsl(293, 100%, 63%) -26%,hsl(264, 100%, 61%)100%);
+  }
+  .main::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -75px;
+    width: 440px;
+    height: 620px;
+    border-top-left-radius: 220px;
+    border-top-right-radius: 250px;
+    background: hsl(270, 20%, 96%);
+    z-index: -999;
+  }
+  .page{
+    position: relative;
+    width: 100%;
+    height: 750px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .fhone{
+      position: relative;
+      right: -40px;
+      top: 130px;
+      width: 280px;
+      height: 520px;
+      background: #fff;
+      box-shadow: 11px 9px 70px -7px rgb(0 0 0 / 25%);
+      border-radius: 30px;
+      padding: 10px;
+      text-align: center;
+  }
+  .camera-box-fhone{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+width: 120px;
+height: 27px;
+background: #fff;
+z-index: 9999;
+border-radius: 15px;
+  }
+  .display{
+      position: relative;
+    
+      width: calc(280px - 20px);
+      height: calc(520px - 20px);
+      background: hsl(270, 20%, 96%);
+      border-radius: 30px;
+  }
+  .top-profile{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(260deg,hsl(293, 100%, 63%) ,hsl(264, 100%, 61%));
+    text-align: left;
+  }
+.bull-img-profile{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 50%;
+   top: 25px;
+   left: 20px;
+   padding: 1px;
+}
+.bull-img-profile img{
+    width: 100%;
+    border-radius: 50%;
+}
+.back-icon{
+    position: absolute;
+    color: #fff;
+    top: 30px;
+    left:8px;
+    font-size: 10px;
+}
+.text-profile{
+    position: absolute;
+    top: 20px;
+    color: #fff;
+    left: 50px;
+}
+.text-profile h4{
+font-size: 11px;
+line-height: 20px;
+color:  hsl(270, 20%, 96%);
+
+font-weight: 200;
+}
+.text-profile p{
+    font-size: 8px;
+opacity: 50%;
+font-family: 10;
+}
+.menu-icon{
+    position: absolute;
+    color: #fff;
+    top: 30px;
+    right:8px;
+    font-size: 10px;
+}
+.main-fhone-profile{
+    position: relative;
+    top: 60px;
+    padding-top: 5px;
+    width: calc(280px - 20px);
+    height: calc(calc(520px - 20px) - 60px);
+
+}
+/* .left{
+    width: 100%;
+    text-align: left;
+} */
+.box{
+    padding: 4px 5px;
+}
+.massage-left{
+ 
+
+    width: fit-content;
+    max-width: 160px;
+    height: auto;
+    min-height: 25px;
+    background: hsl(270, 20%, 86%);
+    border-radius: 10px;
+    border-bottom-left-radius: 1px;
+    text-align: left;
+margin-left:0 ;
+}
+.massage-left p{
+    font-size: 9px;
+    color: #2a2a2a;
+    padding: 5px 10px 5px 10px;
+}
+.massage-right-img{
+    margin-right: 0;
+    margin-top: 10px;
+    padding: 1px;
+  
+    max-width: 170px;
+    height: auto;
+    min-height: 25px;
+}
+.massage-right-img img{
+    width: 29%;
+margin: 0px 2px ;
+border-radius: 10px;
+}
+.massage-right{
+ 
+
+    width: fit-content;
+    max-width: 160px;
+    height: auto;
+    min-height: 25px;
+    background: #fff;
+    box-shadow: 11px 3px 20px -4px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    border-bottom-right-radius: 1px;
+    text-align: left;
+margin-right:0 ;
+}
+.massage-right p{
+    font-size:9px;
+    color: #2a2a2a;
+    padding: 5px 10px 5px 10px;
+}
+.pay-massage{
+    position: relative;
+    width: 180px;
+
+    height: auto;
+    min-height: 25px;
+    background: linear-gradient(90deg,hsl(293, 100%, 63%) ,hsl(264, 100%, 61%));
+    border-radius: 10px;
+    border-bottom-left-radius: 1px;
+    text-align: left;
+margin-left:0 ;
+}
+.pay-massage P{
+    display: inline-block;
+    font-size: 10px;
+    color: #fff;
+    margin: 12px 27px 10px 33px;
+
+}
+.pay-massage h4{
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+
+}
+
+.pay-massage input {
+
+position: absolute;
+ opacity: 1%;
+ width: 15px;
+    height: 15px;
+    margin: 10px;
+    z-index: 100;
+  
+
+}
+.state{
+    position:absolute;
+    display: inline-block;
+    margin-left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid hsl(289, 100%, 72%);
+      background: none;
+    border-radius: 50%;
+margin:10px;
+transition: all .15s ease;
+}
+.pay-massage input:checked + .state{
+    background: #fff;
+
+}
+.text-box {
+    position: relative;
+}
+.text-box input{
+   
+    width: 96%;
+    height: 40px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 12px;
+}
+.text-box button{
+   position: absolute;
+ right: 10px;
+ top: 25px;
+ color: #fff;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ border: none;
+   background:  hsl(271, 36%, 24%);
+   font-size: 15px;
+}
+::placeholder{
+    font-size: 10px;
+    color: hsl(206, 6%, 79%);
+}
+.text-page{
+
+  
+  text-align: left;
+margin: 250px 0;
+height: auto;
+
+}
+.text-page h2{
+  color: hsl(271, 36%, 24%);
+  font-size: 32px;
+  line-height: 90px;
+}
+.text-page p{
+  color: hsl(270, 7%, 64%);
+ font-size: 16px;
+  margin-right: 235px;
+}
